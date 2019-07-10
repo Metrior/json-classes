@@ -1,4 +1,5 @@
-import React, { memo, useEffect, useState } from "react"
+import React from "react"
+import propTypes from 'prop-types';
 import {ObjectInspector} from 'react-inspector';
 
 const Output = ({object}) => {
@@ -9,5 +10,12 @@ const Output = ({object}) => {
         );
     };
 
+Output.propTypes = {
+    object: propTypes.string,
+};
 
-export default memo(Output);
+Output.defaultProps = {
+    object: "",
+};
+
+export default Output;
