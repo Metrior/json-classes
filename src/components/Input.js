@@ -23,22 +23,6 @@ class Input extends Component {
         return this.setState({url: e.target.value})
     };
 
-    // jsonView = () => {
-    //     let jsonViewer = new JSONViewer();
-    //
-    // };
-
-    // setJSON = () => {
-    //     let jsonObj = {};
-    //     try {
-    //         let value = this.state.obj.value;
-    //         jsonObj = JSON.parse(value);
-    //     }
-    //     catch (err) {
-    //         alert(err);
-    //     }
-    // };
-
     render() {
         const { obj } = this.state;
         return (
